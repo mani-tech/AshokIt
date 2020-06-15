@@ -17,6 +17,10 @@ public class RetrieveServiceImpl implements IRetrieveService {
 		this.dao = dao;
 	}
 
+	public int sub(int a,int b)
+	{
+		return a-b;
+	}
 	public List<String> getAllNames(Integer id) {
 		List<String> list=dao.getAllNames(id);
 		Collections.sort(list);
