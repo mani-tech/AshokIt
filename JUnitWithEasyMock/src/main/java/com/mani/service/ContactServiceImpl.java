@@ -14,7 +14,7 @@ public class ContactServiceImpl implements IContactService {
 	
 	public String findNamebyId(Integer id) {
 		String name=contactDao.findNameById(101);
-		String finalName=name.toUpperCase();
+		String finalName=name.toUpperCase().trim();
 		
 		return finalName;
 	}
